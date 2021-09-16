@@ -1,21 +1,39 @@
 
 == Consommation d'eau
 
+=== 2021
+
+.Figure 1: Mètre cube par jour en moyenne depuis le début de l'année.
+{sp}
 
 ++++
-<div id="container" style="width: 500px; height: 400px;"></div>
+<div id="container" style="width: 800px; height: 400px;"></div>
 
 
 <script>
 // create data
 var data = [
-    ["2000", 1100],
-    ["2001", 880],
-    ["2002", 1100],
-    ["2003", 1500],
-    ["2004", 921],
-    ["2005", 1000],
-    ["2006", 1400]
+    ["16/02", 124],
+    ["18/02", 121],
+    ["21/02", 117],
+    ["23/02", 115],
+    ["01/03", 109],
+    ["13/03", 100],
+    ["28/03", 92],
+    ["04/04", 89],
+    ["10/04", 87],
+    ["22/04", 83],
+    ["25/04", 83],
+    ["08/05", 79],
+    ["16/05", 78],
+    ["24/05", 76],
+    ["02/06", 74],
+    ["05/07", 71],
+    ["15/07", 70],
+    ["27/07", 70],
+    ["03/08", 69],
+    ["15/08", 68],
+    ["28/08", 68],
 ];
 
 // create a chart
@@ -23,6 +41,22 @@ chart = anychart.cartesian();
 
 // create a marker series and set the data
 chart.marker(data);
+chart.yAxis().title('mètre cube par jour en moyenne (2021)');
+chart.xAxis().title('date');
+chart.yScale().minimum(0);
+var yAxis = chart.yAxis();
+var lm_avg = chart.lineMarker();
+lm_avg.axis(yAxis);
+lm_avg.value(15);
+lm_avg.stroke({color: 'green', thickness: 2, dash:'5 5', lineCap: 'round'});
+var tm_avg = chart.textMarker();
+tm_avg.axis(chart.yAxis());
+tm_avg.value(20);
+tm_avg.text("moyenne nationale: 15 m3 par jour pour 100 personnes");
+tm_avg.offsetX(0);
+tm_avg.fontColor('green');
+
+
 
 // set the container id
 chart.container("container");
@@ -32,35 +66,52 @@ chart.draw();
 </script>
 ++++
 
-.2021
 
+Actuellement, la consommation nationale française moyenne d’eau s’élève à
+https://gaz-tarif-reglemente.fr/maitriser-sa-consommation/economies-energie/consommation-eau.html[150]
+litres d’eau potable par jour et par personne, soit 0,15 m^3^.
+Pour comparer la consomation au Puid avec la consomation nationale (ligne verte en pointillé),
+il faut une valeur pour la population moyenne au Puid.
+Actuellement, on suppose que cette valeur est *100*, mais cela reste a préciser.
+
+[caption="tableau 1: "]
+
+.Relevé du compteur par date
 [cols="3,4,3"]
 |===
 |Date | Compteur | m^3^
 
 |16/02 | 29251 | 124
-|18/02 | 29251 | 121
-|21/02 | 29251 | 117
-|23/03 | 29251 | 115
-|01/03 | 29251 | 109
-|13/03 | 29251 | 100
-|28/03 | 29251 | 92
-|04/04 | 29251 | 89
-|10/04 | 29251 | 87
-|22/04 | 29251 | 83
-|25/04 | 29251 | 83
-|08/05 | 29251 | 79
-|16/05 | 29251 | 78
-|24/05 | 29251 | 76
-|02/06 | 29251 | 74
-|05/07 | 29251 | 71
-|15/07 | 29251 | 70
-|27/07 | 29251 | 70
-|03/08 | 29251 | 69
-|15/08 | 29251 | 68
-|28/08 | 29251 | 68
+|18/02 | 29349 | 121
+|21/02 | 29512 | 117
+|23/03 | 29640 | 115
+|01/03 | 29960 | 109
+|13/03 | 30559 | 100
+|28/03 | 31348 | 92
+|04/04 | 31723 | 89
+|10/04 | 32072 | 87
+|22/04 | 32725 | 83
+|25/04 | 32898 | 83
+|08/05 | 33528 | 79
+|16/05 | 33964 | 78
+|24/05 | 34364 | 76
+|02/06 | 34760 | 74
+|05/07 | 36641 | 71
+|15/07 | 37133 | 70
+|27/07 | 37848 | 70
+|03/08 | 38166 | 69
+|15/08 | 38903 | 68
+|28/08 | 39636 | 68
 
 |===
 
-Compteur fin de l'année précédente (31/12/2020): *23295*
-m^3^: Mètre cube en moyenne depuis le début de l'année.
+Relevé du compteur à la fin de l'année précédente (31/12/2020): *23295*
+
+m^3^:: Mètre cube par jour en moyenne depuis le début de l'année.
+
+
+
+
+
+
+Notre consommation et donc 5 fois plus importantes (!) que la moyenne.
