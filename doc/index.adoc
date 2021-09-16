@@ -1,0 +1,15 @@
+= Eau du Puid
+:includedir: _includes
+:imagesdir: ./images
+:icons: font
+:toc: left
+:toc-title:
+:nofooter:
+:sectnums:
+:figure-caption!:
+:sectnums!:
+
+[abstract]
+Gestion des resources de la commune du Puid / Vosges: eau, fioul, électricité.
+
+include::{includedir}/eau.adoc[]
