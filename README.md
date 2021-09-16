@@ -1,2 +1,2 @@
 # eaudupuid.github.io
-Website
+Site internet pour eaudupuid.fr
