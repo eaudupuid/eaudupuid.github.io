@@ -436,16 +436,175 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js" type="text/javascript"></script>
 </head>
 <body class="article">
 <div id="header">
 <h1>Eau du Puid</h1>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
 <div class="quoteblock abstract">
 <blockquote>
-Gestion des resources de la commune du Puid / Vosges: eau, fioul, électricité.
+Gestion des resources de la commune du Puid (Vosges): eau, fioul, électricité.
 </blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_consommation_deau">Consommation d&#8217;eau</h2>
+<div class="sectionbody">
+<div id="container" style="width: 500px; height: 400px;"></div>
+
+
+<script>
+anychart.onDocumentLoad(function () {
+  // create an instance of a pie chart
+  var chart = anychart.pie();
+  // set the data
+  chart.data([
+    ["Chocolate", 5],
+    ["Rhubarb compote", 2],
+    ["Crêpe Suzette", 2],
+    ["American blueberry", 2],
+    ["Buttermilk", 1]
+  ]);
+  // set chart title
+  chart.title("Top 5 pancake fillings");
+  // set the container element
+  chart.container("container");
+  // initiate chart display
+  chart.draw();
+});
+</script>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. 2021</caption>
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 40%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Compteur</th>
+<th class="tableblock halign-left valign-top">m<sup>3</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16/02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">124</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18/02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">121</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21/02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">117</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23/03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">115</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">01/03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">109</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13/03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28/03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">92</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">04/04</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">89</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10/04</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">87</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22/04</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25/04</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">08/05</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">79</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16/05</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">78</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24/05</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">76</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">02/06</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">74</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">05/07</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">71</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15/07</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27/07</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">03/08</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">69</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15/08</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28/08</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Compteur fin de l&#8217;année précédente (31/12/2020): <strong>23295</strong>
+m<sup>3</sup>: Mètre cube en moyenne depuis le début de l&#8217;année.</p>
+</div>
+</div>
 </div>
 </div>
 </body>

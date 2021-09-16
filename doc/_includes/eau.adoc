@@ -1,0 +1,62 @@
+
+== Consommation d'eau
+
+
+++++
+<div id="container" style="width: 500px; height: 400px;"></div>
+
+
+<script>
+anychart.onDocumentLoad(function () {
+  // create an instance of a pie chart
+  var chart = anychart.pie();
+  // set the data
+  chart.data([
+    ["Chocolate", 5],
+    ["Rhubarb compote", 2],
+    ["Crêpe Suzette", 2],
+    ["American blueberry", 2],
+    ["Buttermilk", 1]
+  ]);
+  // set chart title
+  chart.title("Top 5 pancake fillings");
+  // set the container element
+  chart.container("container");
+  // initiate chart display
+  chart.draw();
+});
+</script>
+++++
+
+.2021
+
+[cols="3,4,3"]
+|===
+|Date | Compteur | m^3^
+
+|16/02 | 29251 | 124
+|18/02 | 29251 | 121
+|21/02 | 29251 | 117
+|23/03 | 29251 | 115
+|01/03 | 29251 | 109
+|13/03 | 29251 | 100
+|28/03 | 29251 | 92
+|04/04 | 29251 | 89
+|10/04 | 29251 | 87
+|22/04 | 29251 | 83
+|25/04 | 29251 | 83
+|08/05 | 29251 | 79
+|16/05 | 29251 | 78
+|24/05 | 29251 | 76
+|02/06 | 29251 | 74
+|05/07 | 29251 | 71
+|15/07 | 29251 | 70
+|27/07 | 29251 | 70
+|03/08 | 29251 | 69
+|15/08 | 29251 | 68
+|28/08 | 29251 | 68
+
+|===
+
+Compteur fin de l'année précédente (31/12/2020): *23295*
+m^3^: Mètre cube en moyenne depuis le début de l'année.
