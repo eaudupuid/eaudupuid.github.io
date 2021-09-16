@@ -458,7 +458,7 @@ Gestion des resources de la commune du Puid (Vosges): eau, fioul, électricité.
 <div class="sect2">
 <h3 id="_2021">2021</h3>
 <div class="paragraph">
-<div class="title">Figure 1: Mètre cube par jour en moyenne depuis le début de l&#8217;année.</div>
+<div class="title">Figure 1: Mètre cube par jour et par personne en moyenne depuis le début de l&#8217;année.</div>
 <p> </p>
 </div>
 <div id="container" style="width: 800px; height: 400px;"></div>
@@ -467,27 +467,27 @@ Gestion des resources de la commune du Puid (Vosges): eau, fioul, électricité.
 <script>
 // create data
 var data = [
-    ["16/02", 124],
-    ["18/02", 121],
-    ["21/02", 117],
-    ["23/02", 115],
-    ["01/03", 109],
-    ["13/03", 100],
-    ["28/03", 92],
-    ["04/04", 89],
-    ["10/04", 87],
-    ["22/04", 83],
-    ["25/04", 83],
-    ["08/05", 79],
-    ["16/05", 78],
-    ["24/05", 76],
-    ["02/06", 74],
-    ["05/07", 71],
-    ["15/07", 70],
-    ["27/07", 70],
-    ["03/08", 69],
-    ["15/08", 68],
-    ["28/08", 68],
+    ["16/02", 1.24],
+    ["18/02", 1.21],
+    ["21/02", 1.17],
+    ["23/02", 1.15],
+    ["01/03", 1.09],
+    ["13/03", 1.00],
+    ["28/03", 0.92],
+    ["04/04", 0.89],
+    ["10/04", 0.87],
+    ["22/04", 0.83],
+    ["25/04", 0.83],
+    ["08/05", 0.79],
+    ["16/05", 0.78],
+    ["24/05", 0.76],
+    ["02/06", 0.74],
+    ["05/07", 0.71],
+    ["15/07", 0.70],
+    ["27/07", 0.70],
+    ["03/08", 0.69],
+    ["15/08", 0.68],
+    ["28/08", 0.68],
 ];
 
 // create a chart
@@ -495,18 +495,18 @@ chart = anychart.cartesian();
 
 // create a marker series and set the data
 chart.marker(data);
-chart.yAxis().title('mètre cube par jour en moyenne (2021)');
-chart.xAxis().title('date');
+chart.yAxis().title('mètre cube par jour et par personne en moyenne (2021)');
+chart.xAxis().title('date de prélèvement');
 chart.yScale().minimum(0);
 var yAxis = chart.yAxis();
 var lm_avg = chart.lineMarker();
 lm_avg.axis(yAxis);
-lm_avg.value(15);
+lm_avg.value(0.15);
 lm_avg.stroke({color: 'green', thickness: 2, dash:'5 5', lineCap: 'round'});
 var tm_avg = chart.textMarker();
 tm_avg.axis(chart.yAxis());
-tm_avg.value(20);
-tm_avg.text("moyenne nationale 15 m3 par jour pour 100 personnes");
+tm_avg.value(0.2);
+tm_avg.text("moyenne nationale: 0.15 m3 par jour et par personne");
 tm_avg.offsetX(0);
 tm_avg.fontColor('green');
 
@@ -521,20 +521,26 @@ chart.draw();
 <div class="paragraph">
 <p>Actuellement, la consommation nationale française moyenne d’eau s’élève à
 <a href="https://gaz-tarif-reglemente.fr/maitriser-sa-consommation/economies-energie/consommation-eau.html">150</a>
-litres d’eau potable par jour et par personne, soit 0,15 m<sup>3</sup>.
-Pour comparer la consomation au Puid avec la consomation nationale (ligne verte en pointillé),
-il faut une valeur pour la population moyenne au Puid.
-Actuellement, on suppose que cette valeur est <strong>100</strong>, mais cela reste a préciser.</p>
+litres d’eau potable par jour et par personne, soit <strong>0,15 m<sup>3</sup></strong>.
+Pour comparer la consommation au Puid avec la consommation nationale (ligne verte en pointillé),
+il faut choisir une valeur pour la population moyenne au Puid.
+Actuellement, la valeur <strong>100</strong> est choisie, mais ce choix reste à délibérer.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">tableau 1: Relevé du compteur par date</caption>
+<caption class="title">Tableau 1: Relevé du compteur par date</caption>
 <colgroup>
-<col style="width: 30%;">
-<col style="width: 40%;">
-<col style="width: 30%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 10%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 10%;">
 </colgroup>
 <thead>
 <tr>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Compteur</th>
+<th class="tableblock halign-left valign-top">m<sup>3</sup></th>
 <th class="tableblock halign-left valign-top">Date</th>
 <th class="tableblock halign-left valign-top">Compteur</th>
 <th class="tableblock halign-left valign-top">m<sup>3</sup></th>
@@ -544,123 +550,98 @@ Actuellement, on suppose que cette valeur est <strong>100</strong>, mais cela re
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">16/02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">124</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.24</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">18/02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">29349</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">121</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.21</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">21/02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">29512</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">117</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.17</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">23/03</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">29640</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">115</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.15</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">01/03</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">29960</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">109</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.09</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">13/03</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">30559</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">28/03</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">31348</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">92</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.92</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">04/04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">31723</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">89</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.89</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10/04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">32072</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">87</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.87</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">22/04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">32725</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.83</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">25/04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">32898</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.83</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">08/05</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">33528</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">79</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.79</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">16/05</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">33964</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">78</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.78</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">24/05</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">34364</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">76</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.76</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">02/06</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">34760</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">74</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.74</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">05/07</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">36641</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">71</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.71</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">15/07</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">37133</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">70</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.70</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">27/07</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">37848</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">70</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.70</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">03/08</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">38166</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">69</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.69</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">15/08</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">38903</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.68</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">28/08</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">39636</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.68</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Relevé du compteur à la fin de l&#8217;année précédente (31/12/2020): <strong>23295</strong></p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">m<sup>3</sup></dt>
-<dd>
-<p>Mètre cube par jour en moyenne depuis le début de l&#8217;année.</p>
-</dd>
-</dl>
+<p><strong>m<sup>3</sup></strong>: Mètre cube par jour et par personne en moyenne depuis le début de l&#8217;année.<br></p>
 </div>
 <div class="paragraph">
-<p>Notre consommation et donc 5 fois plus importantes (!) que la moyenne.</p>
+<p>Relevé du compteur à la fin de l&#8217;année précédente (31/12/2020): <strong>23295</strong></p>
 </div>
 </div>
 </div>
