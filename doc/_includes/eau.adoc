@@ -7,24 +7,28 @@
 
 
 <script>
-anychart.onDocumentLoad(function () {
-  // create an instance of a pie chart
-  var chart = anychart.pie();
-  // set the data
-  chart.data([
-    ["Chocolate", 5],
-    ["Rhubarb compote", 2],
-    ["Crêpe Suzette", 2],
-    ["American blueberry", 2],
-    ["Buttermilk", 1]
-  ]);
-  // set chart title
-  chart.title("Top 5 pancake fillings");
-  // set the container element
-  chart.container("container");
-  // initiate chart display
-  chart.draw();
-});
+// create data
+var data = [
+    ["2000", 1100],
+    ["2001", 880],
+    ["2002", 1100],
+    ["2003", 1500],
+    ["2004", 921],
+    ["2005", 1000],
+    ["2006", 1400]
+];
+
+// create a chart
+chart = anychart.cartesian();
+
+// create a marker series and set the data
+chart.marker(data);
+
+// set the container id
+chart.container("container");
+
+// initiate drawing the chart
+chart.draw();
 </script>
 ++++
 
