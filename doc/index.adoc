@@ -6,8 +6,23 @@
 :figure-caption!:
 :docinfo:
 
+[.right.text-center]
+image::vue-bright.jpg[vue,400]
 [abstract]
-Gestion des resources de la commune du Puid (Vosges): eau, fioul, électricité.
+Gestion des resources de la commune du Puid (Vosges): eau, fioul, électricité. +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+
+
+
 
 
 include::{includedir}/eau.adoc[]

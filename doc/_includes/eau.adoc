@@ -66,6 +66,8 @@ chart.draw();
 </script>
 ++++
 
+{sp} +
+{sp} +
 
 Actuellement, la consommation nationale française moyenne d’eau s’élève à
 https://gaz-tarif-reglemente.fr/maitriser-sa-consommation/economies-energie/consommation-eau.html[150]
