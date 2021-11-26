@@ -37,6 +37,7 @@ var data = [
     ["28/09", 0.67],
     ["28/09", 0.66],
     ["17/10", 0.65],
+    ["26/11", 0.63],
 ];
 
 // create a chart
@@ -81,7 +82,7 @@ Actuellement, la valeur *100* est choisie, mais ce choix reste à délibérer.
 
 [caption="Tableau 1: "]
 
-.Relevé du compteur par date (denière mise à jour 17.10.2021)
+.Relevé du compteur par date (denière mise à jour 26.11.2021)
 [cols="2,2,1,2,2,1"]
 |===
 |Date | Compteur | m^3^ |Date | Compteur | m^3^
@@ -98,6 +99,7 @@ Actuellement, la valeur *100* est choisie, mais ce choix reste à délibérer.
 |03/08 | 38166 | 0.69 |15/08 | 38903 | 0.68
 |28/08 | 39636 | 0.68 |20/09 | 40878 | 0.67
 |28/09 | 41265 | 0.66 |17/10 | 42295 | 0.65
+|26/11 | 44285 | 0.63 | |  | 
 
 |===
 
