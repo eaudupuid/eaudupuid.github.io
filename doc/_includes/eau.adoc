@@ -59,7 +59,7 @@ il faut choisir une valeur pour la population moyenne au Puid.
 Actuellement, la valeur *100* est choisie, mais ce choix reste à délibérer.
 
 ++++
-<iframe width='800' height='600' scrolling='no' style="background: #F1F5F4;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"  src="https://charts.mongodb.com/charts-m001-kqjgh/embed/dashboards?id=61dcd1f9-ae73-45c7-89bb-5b0b799aada2&theme=light&autoRefresh=true&maxDataAge=1&showTitleAndDesc=true&scalingWidth=fixed&scalingHeight=fixed"></iframe>
+<iframe width='800' height='600' scrolling='no' style="background: #F1F5F4;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"  src="https://charts.mongodb.com/charts-m001-kqjgh/embed/dashboards?id=61dcd1f9-ae73-45c7-89bb-5b0b799aada2&theme=light&autoRefresh=true&maxDataAge=60&showTitleAndDesc=true&scalingWidth=scale&scalingHeight=scale"></iframe>
 ++++
 
 === 2021
