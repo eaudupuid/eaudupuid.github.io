@@ -444,42 +444,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Eau du Puid</h1>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="imageblock right text-center">
+<div class="sidebarblock">
 <div class="content">
-<img src="./images/vue-bright.jpg" alt="vue" width="400">
+Dernier relevé du <strong>1/2/24</strong>: <strong>43</strong> m³ par jour
 </div>
-</div>
-<div class="quoteblock abstract">
-<blockquote>
-Consommation d&#8217;eau potable de la commune de Le Puid (Vosges)
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-</blockquote>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_consommation_deau">Consommation d&#8217;eau</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_2021">2021</h3>
-<div class="paragraph">
-<div class="title">Figure 1: Mètre cube par jour en moyenne depuis le début de l&#8217;année.</div>
-<p> </p>
 </div>
 <div id="container" style="width: 800px; height: 400px;"></div>
-
-
 <script>
 // create data
 var data = [
@@ -506,159 +476,47 @@ var data = [
     ["28/08", 68],
 ];
 
-// create a chart
 chart = anychart.cartesian();
-
-// create a marker series and set the data
 chart.marker(data);
-chart.yAxis().title('mètre cube par jour en moyenne (2021)');
+chart.yAxis().title('m³ par jour');
 chart.xAxis().title('date');
 chart.yScale().minimum(0);
 var yAxis = chart.yAxis();
-var lm_avg = chart.lineMarker();
-lm_avg.axis(yAxis);
-lm_avg.value(15);
-lm_avg.stroke({color: 'green', thickness: 2, dash:'5 5', lineCap: 'round'});
-var tm_avg = chart.textMarker();
-tm_avg.axis(chart.yAxis());
-tm_avg.value(20);
-tm_avg.text("moyenne nationale: 15 m3 par jour pour 100 personnes");
-tm_avg.offsetX(0);
-tm_avg.fontColor('green');
 
-
-
-// set the container id
 chart.container("container");
-
-// initiate drawing the chart
 chart.draw();
 </script>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">tableau 1: Relevé du compteur par date</caption>
+<caption class="title"> Consommation d&#8217;eau potable en m³</caption>
 <colgroup>
-<col style="width: 30%;">
-<col style="width: 40%;">
-<col style="width: 30%;">
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Date</th>
-<th class="tableblock halign-left valign-top">Compteur</th>
-<th class="tableblock halign-left valign-top">m<sup>3</sup></th>
+<th class="tableblock halign-left valign-top">m³</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16/02</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">29251</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">124</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/12/14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">18/02</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">29349</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">121</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/12/15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">21/02</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">29512</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">117</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/12/16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">23/03</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">29640</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">115</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">01/03</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">29960</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">109</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">13/03</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30559</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">28/03</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">31348</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">92</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">04/04</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">31723</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">89</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10/04</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32072</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">87</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">22/04</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32725</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25/04</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32898</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">83</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">08/05</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">33528</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">79</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16/05</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">33964</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">78</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24/05</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">34364</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">76</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">02/06</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">34760</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">74</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">05/07</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">36641</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">71</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15/07</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">37133</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">70</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">27/07</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">37848</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">70</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">03/08</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">38166</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">69</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15/08</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">38903</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">28/08</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">39636</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/12/17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
 </div>
 </body>
 </html>

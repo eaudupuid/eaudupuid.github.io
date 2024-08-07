@@ -6,23 +6,57 @@
 :figure-caption!:
 :docinfo:
 
-[.right.text-center]
-image::vue-bright.jpg[vue,400]
-[abstract]
-Consommation d'eau potable de la commune de Le Puid (Vosges)
-{sp} +
-{sp} +
-{sp} +
-{sp} +
-{sp} +
-{sp} +
-{sp} +
-{sp} +
-{sp} +
-{sp} +
 
 
 
+[sidebar]
+*43* m³ par jour, au *1/2/24*
 
 
-include::{includedir}/eau.adoc[]
+++++
+<div id="container" style="width: 800px; height: 400px;"></div>
+<script>
+// create data
+var data = [
+    ["16/02", 124],
+    ["18/02", 121],
+    ["21/02", 117],
+    ["23/02", 115],
+    ["01/03", 109],
+    ["13/03", 100],
+    ["28/03", 92],
+    ["04/04", 89],
+    ["10/04", 87],
+    ["22/04", 83],
+    ["25/04", 83],
+    ["08/05", 79],
+    ["16/05", 78],
+    ["24/05", 76],
+    ["02/06", 74],
+    ["05/07", 71],
+    ["15/07", 70],
+    ["27/07", 70],
+    ["03/08", 69],
+    ["15/08", 68],
+    ["28/08", 68],
+];
+
+chart = anychart.cartesian();
+chart.marker(data);
+chart.yAxis().title('m³ par jour');
+chart.xAxis().title('date');
+chart.yScale().minimum(0);
+var yAxis = chart.yAxis();
+
+chart.container("container");
+chart.draw();
+</script>
+++++
+
+[caption=" "]
+.Consommation d'eau potable en m³
+[%header,format=csv]
+|===
+include::readings.csv[]
+|===
+
