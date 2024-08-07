@@ -1,0 +1,28 @@
+= Eau du Puid
+:includedir: _includes
+:imagesdir: ./images
+:icons: font
+:nofooter:
+:figure-caption!:
+:docinfo:
+
+[.right.text-center]
+image::vue-bright.jpg[vue,400]
+[abstract]
+Consommation d'eau potable de la commune de Le Puid (Vosges)
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+{sp} +
+
+
+
+
+
+include::{includedir}/eau.adoc[]
